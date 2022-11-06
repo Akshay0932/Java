@@ -76,6 +76,68 @@ for(18,27)  Multiples of 18 are 18, 36, 54, ...
 for(2,10)   2=>2,4,8,10,12,14,16
             10=>10,20
             so 10 is lest common multiple
+    
+    
+   ------- hcf program-----------------
+    import java.util.Scanner;
+
+public class CodesCracker
+{
+   public static void main(String[] args)
+   {
+      int a, b, hcf;
+      Scanner s = new Scanner(System.in);
+      
+      System.out.print("Enter the Two Numbers: ");
+      a = s.nextInt();
+      b = s.nextInt();
+      
+      if(a<b)
+         hcf = a;
+      else
+         hcf = b;
+      
+      while(true)
+      {
+         if((a%hcf==0) && (b%hcf==0))
+            break;
+         else
+            hcf--;
+      }
+      
+      System.out.println("\nHCF(" +a+ ", " +b+ ") = " +hcf);
+   }
+}
+              ----lcm program----
+          import java.util.Scanner;
+
+public class CodesCracker
+{
+   public static void main(String[] args)
+   {
+      int a, b, hcf, lcm;
+      Scanner s = new Scanner(System.in);
+      
+      System.out.print("Enter the Two Numbers: ");
+      a = s.nextInt();
+      b = s.nextInt();
+      
+      if(a>b)
+         lcm = a;
+      else
+         lcm = b;
+      
+      while(true)
+      {
+         if((lcm%a==0) && (lcm%b==0))
+            break;
+         else
+            lcm++;
+      }
+      
+      System.out.println("\nLCM(" +a+ ", " +b+ ") = " +lcm);
+   }
+}    
 
 
    </html> 
