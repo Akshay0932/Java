@@ -1,0 +1,81 @@
+<html>
+
+PROBLEMS
+    1)LEAP YEAR      
+explanation:
+ Leap Year contains 366 days, which comes once every four years. Every
+leap year corresponds to these facts:
+   A century year is a year ending with 00. A century year is a leap year
+   only if it is divisible by 400.
+   A leap year (except a century year) can be identified if it is exactly
+   divisible by 4.
+   A century year should be divisible by 4 and 100 both.
+   A non-century year should be divisible only by 4.
+   
+Note
+
+    eg year like 9000,5000 should be divisible by 400 only
+    eg year like 1975,1870 should be divisible by 4 and not by 100
+
+----------------------------------------------------------------------------------------------------------------
+
+import java.util.*;
+public class Leapyear
+{
+public static void main(String[] args){
+    System.out.print("enter year:  ");
+Scanner sc=new Scanner(System.in);
+int year=sc.nextInt();
+if(year%400==0 || (year%4==0 && (year%100 !=0))){
+    System.out.print("Year is a:"+ year+"which is a leap year");
+}
+else{
+    System.out.print("year is not aleap year");
+}}}
+---------------------------------------------------
+
+        
+  2)pesudocode of leap year  
+
+        Input : A year y
+Output : y is a leap year or not
+ 1.Procedure leapYear (y):
+ 2.If y mod 400 == 0 :
+ 3.Print y is a leap year
+ 4.Else:
+ 5.If y mod 100 == 0 :
+ 6.Print y is not a leap year
+ 7.Else If y mod 4 == 0 :
+ 8.Print y is a leap year
+ 9.Else:
+ 10.Print y is not a leap year
+ 11. End Procedure
+
+        
+    
+-----------------------------------------------------------------------------------------------------------
+
+3)Lcm and hcf of two num
+        Note - HCF stands for Highest Common Factor, whereas LCM stands for Least Common Multiple.
+        That is,
+
+Factors of 18 are 1, 2, 3, 6, 9, 18
+Factors of 27 are 1, 3, 9, 27
+Because 9 is the highest common factor between 18 and 27. Therefore HCF is 9.
+
+In above program, I've assumed one number as gcd (HCF) of two numbers.
+------------------------------------------------------------------------------------------------------------------
+
+
+lcm
+
+for(18,27)  Multiples of 18 are 18, 36, 54, ...
+            Multiples of 27 are 27, 54, ...
+             Because 54 is the least common multiple of 18 and 27. Therefore LCM is 54.
+
+for(2,10)   2=>2,4,8,10,12,14,16
+            10=>10,20
+            so 10 is lest common multiple
+
+
+   </html> 
